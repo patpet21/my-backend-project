@@ -8,7 +8,7 @@ const DEFAULT_PORT = 3000;
 const SECRET_KEY = 'your_secret_key';
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Middleware per autenticare tramite token JWT
 const authenticateToken = (req, res, next) => {
@@ -48,7 +48,7 @@ app.get('/courses', authenticateToken, (req, res) => {
 
 // Endpoint per la root
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // Funzione per trovare una porta disponibile
@@ -68,4 +68,5 @@ findAvailablePort(DEFAULT_PORT, (port) => {
     console.log(`Server running on http://localhost:${port}`);
   });
 });
+
 

@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
     <div class="sidebar">
         <nav>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="benefits.html">benefits</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="settings.html">Settings</a></li>
                 <li><a href="buyNFT.html">Buy NFT</a></li>
                 <li><a href="buyMXA.html">Buy $MXA</a></li>
-                <li><a href="staking.html">Staking $MXA</a></li>
+                <li><a href="games.html">Games</a></li>
             </ul>
         </nav>
     </div>
@@ -29,9 +30,38 @@
         <main>
             <div class="welcome">
                 <h1>Profile</h1>
+                <div class="profile-options">
+                    <div class="option">
+                        <h3>Username</h3>
+                        <p id="display-username">Current Username</p>
+                        <input type="text" id="new-username" placeholder="Enter new username">
+                        <button onclick="updateUsername()">Update</button>
+                    </div>
+                    <div class="option">
+                        <h3>Email</h3>
+                        <p id="display-email">Current Email</p>
+                        <input type="email" id="new-email" placeholder="Enter new email">
+                        <button onclick="updateEmail()">Update</button>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
+    <script>
+        function updateUsername() {
+            const newUsername = document.getElementById('new-username').value;
+            document.getElementById('display-username').innerText = newUsername;
+            alert('Username updated to: ' + newUsername);
+        }
+
+        function updateEmail() {
+            const newEmail = document.getElementById('new-email').value;
+            document.getElementById('display-email').innerText = newEmail;
+            alert('Email updated to: ' + newEmail);
+        }
+    </script>
 </body>
 </html>
+
+
 

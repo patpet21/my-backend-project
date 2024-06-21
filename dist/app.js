@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const benefits Element = document.createElement('div');
         benefits Element.classList.add('benefits ');
         benefits Element.innerHTML = `
-            <img src="${benefits .img}" alt="${benefits .name}">
-            <h3>${benefits .name}</h3>
+            <img src="${benefits.img}" alt="${benefits.name}">
+            <h3>${benefits.name}</h3>
             <div class="buttons">
                 <a href="${benefits .link}" target="_blank">Go to benefits </a>
                 <a href="#">Another Button</a>

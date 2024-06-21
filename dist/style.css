@@ -88,13 +88,13 @@ main {
     text-align: center;
 }
 
-.courses, .boxes {
+.benefits, .boxes {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.course, .box {
+.benefits, .box {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -103,27 +103,27 @@ main {
     overflow: hidden;
 }
 
-.course img, .box img {
+.benefits img, .box img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.course h3, .box h3 {
+.benefits h3, .box h3 {
     margin: 10px;
 }
 
-.course p, .box p {
+.benefits p, .box p {
     margin: 10px;
 }
 
-.course .buttons, .box .buttons {
+.benefits .buttons, .box .buttons {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.course .buttons a, .box button {
+.benefits .buttons a, .box button {
     text-decoration: none;
     color: #fff;
     background: #007bff;
@@ -131,7 +131,7 @@ main {
     border-radius: 5px;
 }
 
-.course .buttons a:hover, .box button:hover {
+.benefits .buttons a:hover, .box button:hover {
     background: #0056b3;
 }
 
@@ -232,11 +232,11 @@ main {
         text-align: center;
     }
 
-    .courses, .boxes {
+    .benefits, .boxes {
         flex-direction: column;
     }
 
-    .course, .box {
+    .benefits, .box {
         width: 100%;
     }
 }

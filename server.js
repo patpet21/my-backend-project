@@ -33,8 +33,8 @@ app.post('/login', (req, res) => {
 });
 
 // Endpoint protetto per ottenere i corsi
-app.get('/courses', authenticateToken, (req, res) => {
-  const courses = [
+app.get('/benefits', authenticateToken, (req, res) => {
+  const benefits = [
     { id: 1, name: 'MetaCubeSpace Origin' },
     { id: 2, name: 'Mining Bitcoin Gratuito' },
     { id: 3, name: 'ULTRON - LOTTODAY - FLIPME - La SUPER Blockchain!!' },
@@ -43,7 +43,7 @@ app.get('/courses', authenticateToken, (req, res) => {
     { id: 6, name: 'MetaCubeTrade - TRADING -' },
     { id: 7, name: 'Beginners Ita' },
   ];
-  res.json(courses);
+  res.json(benefits);
 });
 
 // Endpoint per la root

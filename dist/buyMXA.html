@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/buy_mxa.css">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <nav>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
@@ -23,95 +23,110 @@
     </div>
     <div class="main-content">
         <header>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <div class="logo">
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6619aeb4176de_Progettosenzatitolo83.png" alt="Logo">
+                <img src="logo.png" alt="Logo">
             </div>
         </header>
         <main>
             <div class="welcome">
                 <h1>Buy $MXA</h1>
-                <div id="mexa-mxa-pulsing">MEXA - $MXA</div>
-                <div class="coin-box">
-                    <div class="coin">
-                        <div class="coin__face coin__face--front"></div>
-                        <div class="coin__face coin__face--back"></div>
-                    </div>
+                <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xa40132FB78b4C3DfB77d953fBC212E84d3C865Ae" target="_blank">Buy $MXA on Uniswap</a>
+            </div>
+            <div class="pulsing-text">
+                MEXA - $MXA
+            </div>
+            <div class="coin-box">
+                <div class="coin">
+                    <div class="coin__face coin__face--front"></div>
+                    <div class="coin__face coin__face--back"></div>
                 </div>
-                <div class="info-boxes">
-                    <div class="info-box">
-                        <h2>Max Supply</h2>
-                        <p>21.000.000.000</p>
-                        <p>Created on 2024</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Liquidity Pool</h2>
-                        <p>LOCKED 🔒</p>
-                        <p>Safe liquidity for long time.</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Liquidity Add</h2>
-                        <p>20%</p>
-                        <p>First Pool 🔥</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Smart Contract</h2>
-                        <p>RENOUNCED</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Token Contract Address</h2>
-                        <p>0xa40132FB78b4C3DfB77d95<br>3fBC212E84d3C865Ae</p>
-                        <p><i class="fas fa-link"></i> Chain Link</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Token Name</h2>
-                        <p>MEXA</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Symbol</h2>
-                        <p>$MXA</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Token Decimal</h2>
-                        <p>18</p>
-                        <p><i class="fas fa-cog"></i> Precision</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Network</h2>
-                        <p>Base</p>
-                        <p><i class="fas fa-globe"></i> Global Network</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Diluted Liquidity</h2>
-                        <p>31% 🤽</p>
-                        <p>More pool 🪙</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Marketing & Partnerships</h2>
-                        <p>20% 💹</p>
-                        <p>Research 🔒</p>
-                    </div>
-                    <div class="info-box">
-                        <h2>Airdrop</h2>
-                        <p>20% 🎁</p>
-                        <p>Supporters 🎉</p>
-                    </div>
+            </div>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h2>Max Supply</h2>
+                    <p>21.000.000.000</p>
+                    <p>Created on 2024</p>
                 </div>
-                <div class="unibase_infoBox">
-                    <h2><i class="fas fa-info-circle unibase_icon"></i>IMPORTANT INFORMATION</h2>
-                    <p><i class="fas fa-sliders-h unibase_icon"></i>SET THE SLIPPAGE TO <strong>6%</strong> FOR OPTIMAL TRADING EXPERIENCE.</p>
-                    <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/66397a53a4a4c_Screenshot2024-05-06204730.png" class="unibase_image" alt="Uniswap Settings Example">
-                    <p class="unibase_settings"><i class="fas fa-cog unibase_icon"></i>CLICK ON THE SETTINGS ICON TO ADJUST SLIPPAGE</p>
-                    <p><i class="fas fa-heart unibase_icon"></i>FEES FUEL THE SUSTAINABILITY OF OUR PROJECT AND REWARD OUR SUPPORTIVE HOLDERS.</p>
+                <div class="info-box">
+                    <h2>Liquidity Pool</h2>
+                    <p>LOCKED 🔒</p>
+                    <p>Safe liquidity for long time.</p>
                 </div>
+                <div class="info-box">
+                    <h2>Liquidity Add</h2>
+                    <p>20%</p>
+                    <p>First Pool 🔥</p>
+                </div>
+                <div class="info-box">
+                    <h2>Smart Contract</h2>
+                    <p>RENOUNCED</p>
+                </div>
+                <div class="info-box">
+                    <h2>Token Contract Address</h2>
+                    <p>0xa40132FB78b4C3DfB77d953fBC212E84d3C865Ae</p>
+                    <p><i class="fas fa-link"></i> Chain Link</p>
+                </div>
+                <div class="info-box">
+                    <h2>Token Name</h2>
+                    <p>MEXA</p>
+                </div>
+                <div class="info-box">
+                    <h2>Symbol</h2>
+                    <p>$MXA</p>
+                </div>
+                <div class="info-box">
+                    <h2>Token Decimal</h2>
+                    <p>18</p>
+                    <p><i class="fas fa-cog"></i> Precision</p>
+                </div>
+                <div class="info-box">
+                    <h2>Network</h2>
+                    <p>Base</p>
+                    <p><i class="fas fa-globe"></i> Global Network</p>
+                </div>
+                <div class="info-box">
+                    <h2>Diluted Liquidity</h2>
+                    <p>31% 🤽</p>
+                    <p>More pool 🪙</p>
+                </div>
+                <div class="info-box">
+                    <h2>Marketing & Partnerships</h2>
+                    <p>20% 💹</p>
+                    <p>Research 🔒</p>
+                </div>
+                <div class="info-box">
+                    <h2>Airdrop</h2>
+                    <p>20% 🎁</p>
+                    <p>Supporters 🎉</p>
+                </div>
+            </div>
+            <div class="unibase_infoBox">
+                <h2><i class="fas fa-info-circle unibase_icon"></i>IMPORTANT INFORMATION</h2>
+                <p><i class="fas fa-sliders-h unibase_icon"></i>SET THE SLIPPAGE TO <strong>6%</strong> FOR OPTIMAL TRADING EXPERIENCE.</p>
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/66397a53a4a4c_Screenshot2024-05-06204730.png" class="unibase_image" alt="Uniswap Settings Example">
+                <p class="unibase_settings"><i class="fas fa-cog unibase_icon"></i>CLICK ON THE SETTINGS ICON TO ADJUST SLIPPAGE</p>
+                <p><i class="fas fa-heart unibase_icon"></i>FEES FUEL THE SUSTAINABILITY OF OUR PROJECT AND REWARD OUR SUPPORTIVE HOLDERS.</p>
+            </div>
+            <div class="iframe-container">
                 <iframe id="unibase_uniSwapIframe" height="660px" width="100%"></iframe>
-                <div class="iframe-container">
-                    <iframe src="https://dexscreener.com/base/0x4ce23d2ef5951f80c82f099de7249bfcddfb41ec?embed=1&amp;theme=dark" allowfullscreen></iframe>
-                </div>
-                <iframe width="100%" height="500px" frameborder="0" allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *" src="https://flooz.xyz/embed/trade?swapDisabled=false&swapNetwork=base&swapToTokenAddress=0xa40132fb78b4c3dfb77d953fbc212e84d3c865ae&swapLockToToken=false&onRampDisabled=false&onRampNetwork=base&onRampAsDefault=false&onRampTokenAddress=eth&network=eth&lightMode=false&backgroundColor=transparent&miniApp=false&miniappIntent=swap"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://dexscreener.com/base/0x4ce23d2ef5951f80c82f099de7249bfcddfb41ec?embed=1&amp;theme=dark" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe width="400" height="720" frameborder="0" allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *" src="https://flooz.xyz/embed/trade?swapDisabled=false&swapNetwork=base&swapToTokenAddress=0xa40132fb78b4c3dfb77d953fbc212e84d3c865ae&swapLockToToken=false&onRampDisabled=false&onRampNetwork=base&onRampAsDefault=false&onRampTokenAddress=eth&network=eth&lightMode=false&backgroundColor=transparent&miniApp=false&miniappIntent=swap"></iframe>
             </div>
         </main>
     </div>
     <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+
         var unibase = {
             setupNetwork: async function() {
                 if (window.ethereum) {
@@ -155,9 +170,6 @@
     </script>
 </body>
 </html>
-
-
-
 
 
 

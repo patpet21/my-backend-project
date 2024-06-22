@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/benefits.css">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <nav>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
@@ -26,6 +26,7 @@
             <div class="logo">
                 <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6619aeb4176de_Progettosenzatitolo83.png" alt="Logo">
             </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </header>
         <main>
             <div class="welcome">
@@ -34,7 +35,7 @@
                     <div class="benefit">
                         <img src="https://via.placeholder.com/150" alt="Airdrop Telegram">
                         <h3>Airdrop Telegram</h3>
-                        <p>benefits description...</p>
+                        <p>Benefits description...</p>
                         <div class="buttons">
                             <a href="#">ACCESS</a>
                         </div>
@@ -42,7 +43,7 @@
                     <div class="benefit">
                         <img src="https://via.placeholder.com/150" alt="Mining BTC FREE">
                         <h3>Mining BTC FREE</h3>
-                        <p>benefits description...</p>
+                        <p>Benefits description...</p>
                         <div class="buttons">
                             <a href="#">ACCESS</a>
                         </div>
@@ -50,7 +51,7 @@
                     <div class="benefit">
                         <img src="https://via.placeholder.com/150" alt="Crypto For Beginners">
                         <h3>Crypto For Beginners</h3>
-                        <p>benefits description...</p>
+                        <p>Benefits description...</p>
                         <div class="buttons">
                             <a href="#">ACCESS</a>
                         </div>
@@ -58,7 +59,7 @@
                     <div class="benefit">
                         <img src="https://via.placeholder.com/150" alt="Coming Soon">
                         <h3>Coming Soon</h3>
-                        <p>benefits description...</p>
+                        <p>Benefits description...</p>
                         <div class="buttons">
                             <a href="#">ACCESS</a>
                         </div>
@@ -66,7 +67,7 @@
                     <div class="benefit">
                         <img src="https://via.placeholder.com/150" alt="Coming Soon">
                         <h3>Coming Soon</h3>
-                        <p>benefits description...</p>
+                        <p>Benefits description...</p>
                         <div class="buttons">
                             <a href="#">ACCESS</a>
                         </div>
@@ -74,7 +75,7 @@
                     <div class="benefit">
                         <img src="https://via.placeholder.com/150" alt="Coming Soon">
                         <h3>Coming Soon</h3>
-                        <p>benefits description...</p>
+                        <p>Benefits description...</p>
                         <div class="buttons">
                             <a href="#">ACCESS</a>
                         </div>
@@ -83,6 +84,17 @@
             </div>
         </main>
     </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+            document.querySelector('.main-content').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
+
+
 

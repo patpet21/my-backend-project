@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <nav>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
@@ -26,11 +26,12 @@
             <div class="logo">
                 <img src="logo.png" alt="Logo">
             </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </header>
         <main>
             <div class="welcome">
                 <h1>Dashboard</h1>
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6675d0cd2d62c_Progettosenzatitolo-2024-06-21T150752.601.png" alt="Progetto senza titolo" class="center-image">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6676259566c13_Progettosenzatitolo-2024-06-21T211447.367.png" alt="Progetto senza titolo" class="center-image">
                 <div class="section-container">
                     <div class="section">
                         <h3>MEXA WEBSITE</h3>
@@ -57,6 +58,16 @@
             </div>
         </main>
     </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
+
+
 

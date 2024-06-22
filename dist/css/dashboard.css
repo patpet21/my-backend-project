@@ -1,3 +1,11 @@
+.center-image {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
 .section-container {
     display: flex;
     flex-wrap: wrap;
@@ -52,4 +60,6 @@
         width: 80%;
     }
 }
+
+
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/games.css">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <nav>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
@@ -26,6 +26,7 @@
             <div class="logo">
                 <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6619aeb4176de_Progettosenzatitolo83.png" alt="Logo">
             </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </header>
         <main>
             <div class="welcome">
@@ -86,5 +87,14 @@
             </div>
         </main>
     </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
+

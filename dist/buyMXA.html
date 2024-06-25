@@ -23,21 +23,40 @@
     </div>
     <div class="main-content">
         <header>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <div class="logo">
-                <img src="logo.png" alt="Logo">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6619aeb4176de_Progettosenzatitolo83.png" alt="Logo">
             </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </header>
         <main>
             <div class="welcome">
                 <h1>Buy $MXA</h1>
-                <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xa40132FB78b4C3DfB77d953fBC212E84d3C865Ae" target="_blank">Buy $MXA on Uniswap</a>
-            </div>
-            <div class="iframe-container">
-                <iframe id="unibase_uniSwapIframe" height="660px" width="100%"></iframe>
-            </div>
-            <div class="iframe-container">
-                <iframe src="https://dexscreener.com/base/0x4ce23d2ef5951f80c82f099de7249bfcddfb41ec?embed=1&amp;theme=dark" allowfullscreen></iframe>
+                <div class="section-container">
+                    <div class="section">
+                        <img src="https://via.placeholder.com/160" alt="MXA Info 1">
+                        <h3>MXA Info 1</h3>
+                        <p>Details about MXA Info 1...</p>
+                        <div class="buttons">
+                            <a href="#" target="_blank">ACCESS</a>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <img src="https://via.placeholder.com/160" alt="MXA Info 2">
+                        <h3>MXA Info 2</h3>
+                        <p>Details about MXA Info 2...</p>
+                        <div class="buttons">
+                            <a href="#" target="_blank">ACCESS</a>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <img src="https://via.placeholder.com/160" alt="MXA Info 3">
+                        <h3>MXA Info 3</h3>
+                        <p>Details about MXA Info 3...</p>
+                        <div class="buttons">
+                            <a href="#" target="_blank">ACCESS</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -48,47 +67,10 @@
         menuToggle.addEventListener('click', () => {
             sidebar.classList.toggle('hidden');
         });
-
-        var unibase = {
-            setupNetwork: async function() {
-                if (window.ethereum) {
-                    try {
-                        await window.ethereum.request({
-                            method: 'wallet_switchEthereumChain',
-                            params: [{ chainId: '0x...' }]
-                        });
-                    } catch (error) {
-                        if (error.code === 4902) {
-                            await window.ethereum.request({
-                                method: 'wallet_addEthereumChain',
-                                params: [{
-                                    chainId: '0x...',
-                                    chainName: 'Base Network',
-                                    nativeCurrency: {
-                                        name: 'Base Coin',
-                                        symbol: 'BASE',
-                                        decimals: 18
-                                    },
-                                    rpcUrls: ['https://rpc-url-of-base-network.com'],
-                                    blockExplorerUrls: ['https://explorer-of-base-network.com']
-                                }]
-                            });
-                        }
-                    }
-                }
-            },
-
-            loadUniswapFrame: function() {
-                var baseUrl = "https://app.uniswap.org/";
-                var path = "#/swap";
-                var inputCurrency = "ETH";
-                var outputCurrency = "0xa40132FB78b4C3DfB77d953fBC212E84d3C865Ae";
-                var fullUrl = `${baseUrl}${path}?inputCurrency=${inputCurrency}&outputCurrency=${outputCurrency}`;
-                document.getElementById('unibase_uniSwapIframe').src = fullUrl;
-            }
-        };
-
-        unibase.setupNetwork().then(unibase.loadUniswapFrame);
     </script>
 </body>
 </html>
+
+
+
+

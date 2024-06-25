@@ -2,9 +2,10 @@
 .center-image {
     display: block;
     margin: 20px auto;
-    width: 1200px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
+    max-width: 1200px; /* Ensure the image doesn't exceed this width */
 }
 
 .button-container {
@@ -80,6 +81,11 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .center-image {
+        width: 100%; /* Ensure the image adjusts to the width of the screen */
+        height: auto; /* Adjust the height automatically */
+    }
+
     .benefits-container {
         flex-direction: column;
         align-items: center;

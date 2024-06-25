@@ -26,6 +26,7 @@
             <div class="logo">
                 <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/6619aeb4176de_Progettosenzatitolo83.png" alt="Logo">
             </div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </header>
         <main>
             <div class="welcome">
@@ -36,29 +37,41 @@
                 </div>
                 <div class="benefits-container">
                     <div class="benefit">
-                        <img src="https://via.placeholder.com/150" alt="Coming Soon">
-                        <div>
-                            <h3>New Collection Coming Soon</h3>
-                            <p>Stay tuned for more...</p>
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/667a140715ba4_Slippage63.png" alt="Luminar">
+                        <h3>Luminar Collection</h3>
+                        <p>Stay tuned for more...</p>
+                        <div class="buttons">
+                            <a href="https://opensea.io/collection/metalandluminar/overview" target="_blank">BUY NFT</a>
                         </div>
                     </div>
                     <div class="benefit">
-                        <img src="https://via.placeholder.com/150" alt="Coming Soon">
-                        <div>
-                            <h3>New Collection Coming Soon</h3>
-                            <p>Stay tuned for more...</p>
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/667a11c1a0755_Slippage62.png" alt="Coming Soon">
+                        <h3>New Collection Coming Soon</h3>
+                        <p>Stay tuned for more...</p>
+                        <div class="buttons">
+                            <a href="https://opensea.io/collection/metalandluminar/overview" target="_blank">BUY NFT</a>
                         </div>
                     </div>
                     <div class="benefit">
-                        <img src="https://via.placeholder.com/150" alt="Coming Soon">
-                        <div>
-                            <h3>New Collection Coming Soon</h3>
-                            <p>Stay tuned for more...</p>
+                        <img src="https://d1yei2z3i6k35z.cloudfront.net/2979038/667a11c1a0755_Slippage62.png" alt="Coming Soon">
+                        <h3>New Collection Coming Soon</h3>
+                        <p>Stay tuned for more...</p>
+                        <div class="buttons">
+                            <a href="https://opensea.io/collection/metalandluminar/overview" target="_blank">BUY NFT</a>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
+
